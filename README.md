@@ -82,40 +82,18 @@ Utilize a abordagem **Atomic Design** para estruturar seus componentes:
 
 ### 5.1 Estrutura de Pastas
 
-```bash
-/design-system
-  /components
-    /Button
-      index.tsx
-      styles.ts
-      types.ts
-  /tokens
-    colors.ts
-    spacing.ts
-    typography.ts
-  /hooks
-  /icons
-```
+- Elevar escopo (scope lifting)
+Uso comum: "Vamos elevar o escopo dessa função para que ela possa ser compartilhada."
+funções ou componentes que precisam estar acessíveis em níveis superiores da arquitetura.
 
-### 5.2 Tokens de Design
+- Promover (promote a function/component)
+Exemplo: "Promovemos a função para um nível acima na estrutura de pastas para permitir a reutilização."
 
-- Centralize os estilos reutilizáveis em arquivos de **tokens**.
-- Exemplo:
-  ```ts
-  export const spacing = {
-    xs: '4px',
-    sm: '8px',
-    md: '16px',
-    lg: '24px',
-  }
-  ```
+- Extrair para camada compartilhada / utilitária
+Exemplo: "Extraímos uma função para a pasta shared para respeitar a separação de responsabilidades. mantendo o (scope lifting)"
 
----
+- Generalização
+Exemplo: "Generalizamos o componente para que ele não dependa diretamente do Hook Form e possa ser usado em diferentes contextos."
 
-## 🔧 6. Ferramentas e Boas Práticas
-
-- **Storybook**: documente e visualize seus componentes isoladamente.
-- **Figma**: alinhe o design visual com o time de design.
-- **Stylelint / ESLint**: imponha consistência de código.
-- **Tailwind CSS ou styled-components**: escolha conforme o contexto do time.
----
+- Refatoração para reutilização
+Exemplo: "Refatoramos o componente para promover reutilização e evitar acoplamento desnecessário."
