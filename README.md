@@ -25,7 +25,7 @@ Utilize a abordagem **Atomic Design** para estruturar seus componentes:
 - **Moléculas**: conjunto de átomos (ex: campo de busca com ícone).
 - **Organismos**: seções reutilizáveis (ex: navbar).
 - **Templates**: layout de páginas com componentes organizados.
-- **Páginas**: instâncias reais com dados.
+- **Páginas**: instâncias reais com dados representando um end point.
 
 ### 2.2 Composição de Componentes
 
@@ -118,33 +118,4 @@ Utilize a abordagem **Atomic Design** para estruturar seus componentes:
 - **Figma**: alinhe o design visual com o time de design.
 - **Stylelint / ESLint**: imponha consistência de código.
 - **Tailwind CSS ou styled-components**: escolha conforme o contexto do time.
-
----
-
-## 🧪 7. Testes de Componentes
-
-- Use **React Testing Library** para testes focados no comportamento do usuário.
-- Teste:
-  - Renderização
-  - Interações
-  - Estados visuais
-  - Acessibilidade (`axe-core`)
-
----
-
-## 🌐 8. Acessibilidade
-
-- Use `aria-*` e roles semânticos (`button`, `nav`, `main`, etc.).
-- Certifique-se que seus componentes são navegáveis por teclado.
-- Contraste de cores e foco visível são obrigatórios.
-
----
-
-## 📚 9. Referências
-
-- [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
-- [Storybook](https://storybook.js.org/)
-- [WAI-ARIA Guidelines](https://www.w3.org/WAI/standards-guidelines/aria/)
-- [A Complete Guide to Building a Design System (Smashing Magazine)](https://www.smashingmagazine.com/2020/03/guide-building-design-systems/)
-
 ---
